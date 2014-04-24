@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var fs = require("fs");
+var argv = require("optimist").argv;
+
+var convert = require("./lib/convert");
+var compile = require("./lib/compile");
+
+var input;
+
+if (argv._[0]) {
+  input = fs.readFileSync("./" + argv._[0]).toString();
+}
+else {
+  console.log("Usage: jscss [file]");
+  process.exit();
+}
+
+var converted = convert(input);
+
+if (argv.pretty) {
+  console.log(compile.pretty(converted));
+}
+else {
+  console.log(compile.compact(converted));
+}
