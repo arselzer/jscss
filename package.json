@@ -1,7 +1,7 @@
 {
   "name": "jscss",
-  "version": "0.1.0",
-  "description": "Embedded CSS in JavaScript",
+  "version": "0.1.1",
+  "description": "CSS embedded in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,10 @@
     "jscss": "./jscss"
   },
   "author": "Alexander Selzer <aselzer3@gmail.com> (http://alexselzer.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderSelzer/jscss"
+  },
   "license": "MIT",
   "dependencies": {
     "cssbeautify": "^0.3.1",

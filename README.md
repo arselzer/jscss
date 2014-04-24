@@ -7,8 +7,22 @@ It's like React's JSX, but for CSS.
 
 ## Usage
 
-`jscss [filename]`
-`--pretty` for pretty output (jsbeautify)
+```bash
+npm install -g jscss
+
+jscss [--pretty] [filename]
+```
+
+## Syntax
+
+JsCSS can magically differentiate JavaScript and CSS (hopefully, using one big Regex).
+
+This makes it possible to mix both languages in an intuitive way.
+A special preprocessor like Sass and LESS is not needed.
+JavaScript is the preprocessor.
+
+Within CSS expressions, `|` can be used to create JavaScript zones. They will be eval'd (literally)
+like JavaScript.
 
 ## Example
 
