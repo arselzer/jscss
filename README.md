@@ -116,6 +116,14 @@ p > li.number-3 {
 
 ```
 
+## Aims
+
+This isn't done yet. Things will change.
+
+* Use a VM to execute JavaScript more safely.
+* Attach a "standard library", which can do common colour-calculations
+* Test against even more complex selectors.
+
 ## License
 
 MIT - `LICENSE`
