@@ -21,6 +21,9 @@ var converted = convert(input);
 if (argv.pretty) {
   console.log(compile.pretty(converted));
 }
+if (argv.intermediate) {
+  console.log(converted);
+}
 else {
   console.log(compile.compact(converted));
 }

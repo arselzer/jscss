@@ -7,6 +7,9 @@ exports = function(jscss, options) {
   if (options.pretty) {
     return compile.pretty(converted);
   }
+  else if (options.intermediate) {
+    return converted;
+  }
   else {
     return compile.compact(converted);
   }
