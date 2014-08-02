@@ -5,8 +5,13 @@ var cool_colour = "rgb(39, 192, 129)";
   -webkit-box-sizing: border-box;
 }
 
-p {
+html {
+  background-color: rgba(3, 4, 5, 0.6);
+}
+
+html[lang|="en"] {
   color: rgb(238 , 23, 12);
+  font-family: Open Sans;
 }
 
 for (var i = 0; i < 5; i++) {
