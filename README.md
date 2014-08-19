@@ -15,14 +15,13 @@ jscss [--pretty] [filename]
 
 ## Syntax
 
-JsCSS can magically differentiate JavaScript and CSS (hopefully, using one big Regex).
+JsCSS can differentiate between JavaScript and CSS (hopefully, using one big Regex).
 
-This makes it possible to mix both languages in an intuitive way.
-A special preprocessor like Sass and LESS is not needed.
-JavaScript is the preprocessor.
+This makes it possible to mix both languages in a quite useful way.
+It's like LESS or Sass, only: JavaScript is the preprocessor.
 
-Within CSS expressions, `|` can be used to create JavaScript zones. They will be eval'd (literally)
-like JavaScript.
+Within CSS expressions, `|` can be used to create JavaScript zones.
+They will be executed and the output will be merged with the CSS.
 
 ## Example
 
@@ -31,7 +30,7 @@ var cool_colour = "rgb(39, 192, 129)";
 
 * {
     box-sizing: border-box;
-      -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html {
@@ -40,15 +39,13 @@ html {
 
 html[lang|="en"] {
     color: rgb(238 , 23, 12);
-      font-family: Open Sans;
+    font-family: Open Sans;
 }
 
 for (var i = 0; i < 5; i++) {
-
     div .hello:nth-child(|i|) {
-          color: rgb(| i * 10 |, 20, |i * 20|);
-            }
-
+        color: rgb(| i * 10 |, 20, |i * 20|);
+    }
 }
 
 var i = 0;
@@ -58,12 +55,11 @@ p > li {
 }
 
 while (i < 4) {
-
     p > li.number-|i| {
-          width: |i * 10|;
-            }
+        width: |i * 10|;
+    }
 
-              i++;
+    i++;
 }
 
 ```
@@ -132,7 +128,6 @@ This isn't done yet. Things will change.
 
 * Include a standard library for colour modifications.
 * Plugin API
-* Test against more complex selectors.
 
 ## License
 
