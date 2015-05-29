@@ -16,6 +16,11 @@ else {
   process.exit();
 }
 
+if (!process.argv[2]) {
+  console.log("Usage: index.js [file]");
+  process.exit();
+}
+
 var converted = convert(input);
 
 if (argv.pretty) {
