@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node test.js"
   },
-  "author": "Alexander Selzer <aselzer3@gmail.com> (http://alexselzer.com/)",
+  "bin": {
+    "jscss": "./jscss"
+  },
+  "author": "Alexander Selzer <aselzer3@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/AlexanderSelzer/jscss"
@@ -14,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "assertit": "^0.1.0"
+  },
+  "dependencies": {
+    "optimist": "^0.6.1"
   }
 }
