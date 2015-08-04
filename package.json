@@ -1,7 +1,7 @@
 {
   "name": "jscss",
-  "version": "1.0.0",
-  "description": "Embedded CSS in Javascript. A preprocessor-ish thing.",
+  "version": "0.3.0",
+  "description": "Embedded CSS in Javascript. A CSS preprocessor-ish thing. Write CSS in JavaScript or vice versa.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -11,5 +11,8 @@
     "type": "git",
     "url": "https://github.com/AlexanderSelzer/jscss"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "assertit": "^0.1.0"
+  }
 }
