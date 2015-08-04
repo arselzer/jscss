@@ -1,13 +1,10 @@
 {
   "name": "jscss",
-  "version": "0.2.2",
-  "description": "CSS embedded in JavaScript",
+  "version": "0.3.0",
+  "description": "Embedded CSS in Javascript. A CSS preprocessor-ish thing. Write CSS in JavaScript or vice versa.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "jscss": "./jscss"
+    "test": "node test.js"
   },
   "author": "Alexander Selzer <aselzer3@gmail.com> (http://alexselzer.com/)",
   "repository": {
@@ -15,8 +12,7 @@
     "url": "https://github.com/AlexanderSelzer/jscss"
   },
   "license": "MIT",
-  "dependencies": {
-    "cssbeautify": "^0.3.1",
-    "optimist": "^0.6.1"
+  "devDependencies": {
+    "assertit": "^0.1.0"
   }
 }
