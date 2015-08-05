@@ -1,5 +1,5 @@
-var convert = require("./convert");
-var compile = require("./compile");
+var convert = require("./lib/convert");
+var compile = require("./lib/compile");
 
 exports = function(jscss, options) {
   var converted = convert(jscss);
